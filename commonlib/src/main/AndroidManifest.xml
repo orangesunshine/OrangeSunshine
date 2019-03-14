@@ -1,2 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jiutai.commonlib" />
+    package="com.jiutai.commonlib">
+
+    <application>
+        <activity android:name=".plugin.ProxyActivity"></activity>
+    </application>
+
+</manifest>

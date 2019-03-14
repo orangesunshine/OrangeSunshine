@@ -116,7 +116,8 @@ public class InjectManager {
     private static Object dynamicImp(final Activity activity, final Method method, String callBack, Class<?> type) {
         ListenerInvocationHanlder hanlder = new ListenerInvocationHanlder(activity);
         hanlder.add(callBack, method);
-        return Proxy.newProxyInstance(type.getClassLoader(), new Class[]{type}, hanlder);
+        return Proxy.newProxyInstance(type
+                .getClassLoader(), new Class[]{type}, hanlder);
     }
 
     private static View.OnClickListener staticImp(final Activity activity, final Method method) {
